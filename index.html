@@ -16,7 +16,7 @@
   <header class="header" id="top">
     <div class="container nav-container">
       <div class="logo">
-        <span class="logo-icon">🌸</span>
+        <span class="logo-icon"><i class="fas fa-spa"></i><i class="fas fa-stethoscope"></i></span>
         <span class="logo-text">Flower Homeo Clinic</span>
       </div>
       <nav class="nav">
@@ -270,14 +270,14 @@
           <p>Reach out to us for clinic visits or consultation.</p>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <label for="name">Full Name</label>
-            <input id="name" type="text" placeholder="Your name" required>
+            <label for="name">Full Name *</label>
+            <input id="name" type="text" placeholder="Your name" required minlength="2">
           </div>
           <div class="form-group">
-            <label for="phone">Phone / WhatsApp</label>
-            <input id="phone" type="tel" placeholder="Your number" required>
+            <label for="phone">Phone / WhatsApp *</label>
+            <input id="phone" type="tel" placeholder="Your 10-digit number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
           </div>
           <div class="form-group">
             <label for="service">Concern / Service</label>
@@ -287,11 +287,11 @@
             <label for="message">Message</label>
             <textarea id="message" rows="4" placeholder="Share your health concern briefly"></textarea>
           </div>
-          <button type="submit" class="btn primary-btn">
-            Submit (Demo Form)
+          <button type="submit" class="btn primary-btn full-width-btn">
+            <i class="fab fa-whatsapp"></i> Send via WhatsApp
           </button>
           <p class="form-note">
-            *This is a demo form. You can contact us directly via phone or WhatsApp for faster response.
+            *Your enquiry will be sent directly to the clinic via WhatsApp.
           </p>
         </form>
       </div>
@@ -340,5 +340,44 @@
       <a href="#top" class="back-to-top">Back to top <i class="fas fa-arrow-up"></i></a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const message = document.getElementById('message').value.trim();
+      
+      // Validation
+      if (name.length < 2) {
+        alert('Please enter a valid name (at least 2 characters).');
+        return;
+      }
+      
+      if (!/^[0-9]{10}$/.test(phone)) {
+        alert('Please enter a valid 10-digit phone number.');
+        return;
+      }
+      
+      // Build WhatsApp message
+      let whatsappMsg = `*New Enquiry from Website*%0A%0A`;
+      whatsappMsg += `*Name:* ${encodeURIComponent(name)}%0A`;
+      whatsappMsg += `*Phone:* ${encodeURIComponent(phone)}%0A`;
+      if (service) {
+        whatsappMsg += `*Concern:* ${encodeURIComponent(service)}%0A`;
+      }
+      if (message) {
+        whatsappMsg += `*Message:* ${encodeURIComponent(message)}`;
+      }
+      
+      // Open WhatsApp with pre-filled message
+      window.open(`https://wa.me/918590421640?text=${whatsappMsg}`, '_blank');
+      
+      // Reset form
+      this.reset();
+    });
+  </script>
 </body>
 </html>

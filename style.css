@@ -80,6 +80,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-icon {
   font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo-icon .fa-spa {
+  color: #e91e63;
+  font-size: 1.5rem;
+}
+
+.logo-icon .fa-stethoscope {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-left: -0.3rem;
 }
 
 .logo-text {
@@ -317,6 +331,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   border: 5px solid var(--primary);
   box-shadow: 0 8px 30px rgba(13, 110, 110, 0.25);
 }
