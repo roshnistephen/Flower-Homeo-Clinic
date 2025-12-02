@@ -4,7 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flower Homeo Clinic | Dr. Andrews A. X. | Gentle Homeopathic Care</title>
-  <meta name="description" content="Flower Homeo Clinic offers long-lasting relief from health problems using natural German science of homoeopathy. Dr. Andrews A. X. with 35+ years experience. Book an appointment today.">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Flower Homeo Clinic offers natural homeopathic treatments for chronic diseases. Dr. Andrews A. X. with 35+ years experience treating 6000+ patients. Book your appointment today.">
+  <meta name="keywords" content="homeopathy, homeopathic clinic, natural treatment, Dr. Andrews, Ernakulam, Kerala, skin treatment, hair fall, PCOS, thyroid, migraine, psoriasis, eczema, vitiligo">
+  <meta name="author" content="Flower Homeo Clinic">
+  <meta name="theme-color" content="#7c9885">
+  
+  <!-- Robots Meta Tags -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flower Homeo Clinic | Natural Homeopathic Care">
+  <meta property="og:description" content="Experience gentle, effective homeopathic treatments with Dr. Andrews A. X. 35+ years of expertise in natural healing.">
+  <meta property="og:url" content="https://flowerhomeoclinic.com">
+  <meta property="og:site_name" content="Flower Homeo Clinic">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flower Homeo Clinic | Natural Homeopathic Care">
+  <meta name="twitter:description" content="Experience gentle, effective homeopathic treatments with Dr. Andrews A. X.">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://flowerhomeoclinic.com">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +39,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Floating Background Elements -->
+  <div class="floating-elements">
+    <div class="floating-leaf leaf-1"><i class="fas fa-leaf"></i></div>
+    <div class="floating-leaf leaf-2"><i class="fas fa-seedling"></i></div>
+    <div class="floating-leaf leaf-3"><i class="fas fa-leaf"></i></div>
+    <div class="floating-flower flower-1"><i class="fas fa-spa"></i></div>
+    <div class="floating-flower flower-2"><i class="fas fa-spa"></i></div>
+    <div class="floating-medical med-1"><i class="fas fa-pills"></i></div>
+    <div class="floating-medical med-2"><i class="fas fa-stethoscope"></i></div>
+  </div>
+
   <!-- Top Navigation -->
   <header class="header" id="top">
     <div class="container nav-container">
-      <div class="logo">
+      <a href="#top" class="logo">
         <span class="logo-icon"><i class="fas fa-spa"></i><i class="fas fa-stethoscope"></i></span>
         <span class="logo-text">Flower Homeo Clinic</span>
-      </div>
-      <nav class="nav">
+      </a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="#top"><i class="fas fa-home"></i> Home</a>
         <a href="#about">About</a>
         <a href="#treatments">Treatments</a>
         <a href="#reviews">Reviews</a>
@@ -33,29 +75,23 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1>Where Good Health Comes Naturally</h1>
-        <p>
-          Flower Homeo Clinic offers long-lasting relief from health problems by using the natural, 
-          German science of homoeopathy. Our expertise in holistic treatment gives you more than just 
-          short-term remedies. We provide an alternative approach for your condition so it does not come back again!
-        </p>
+        <h1>Natural Healing, Lasting Results</h1>
+        <p>Experience holistic homeopathic care that treats the root cause of your health concerns with gentle, natural remedies.</p>
         <div class="hero-buttons">
           <a href="#contact" class="btn primary-btn">Book Appointment</a>
-          <a href="#treatments" class="btn secondary-btn">View Treatments</a>
+          <a href="#treatments" class="btn secondary-btn">Our Treatments</a>
         </div>
         <div class="clinic-timings">
-          <p><strong><i class="fas fa-clock"></i> Clinic Timings:</strong></p>
-          <p>9:00 AM - 12:30 PM</p>
-          <p>4:00 PM - 8:00 PM</p>
+          <p><strong><i class="fas fa-clock"></i> Clinic Hours:</strong> 9AM–12:30PM &amp; 4PM–8PM</p>
         </div>
       </div>
       <div class="hero-card">
-        <h2>New Patient?</h2>
-        <p>Share your concerns and get a personalized homeopathic treatment plan.</p>
+        <h2>Start Your Healing Journey</h2>
+        <p>Personalized treatment plans for your unique needs.</p>
         <ul>
-          <li>Treatment for Acute and Chronic diseases</li>
-          <li>35+ years of experience</li>
-          <li>6000+ satisfied patients</li>
+          <li><i class="fas fa-check-circle"></i> Acute &amp; Chronic Care</li>
+          <li><i class="fas fa-check-circle"></i> 35+ Years Experience</li>
+          <li><i class="fas fa-check-circle"></i> 6000+ Happy Patients</li>
         </ul>
         <a href="#contact" class="btn full-width-btn">Schedule Visit</a>
       </div>
@@ -66,38 +102,23 @@
   <section id="about" class="section">
     <div class="container">
       <div class="section-header">
-        <h2>About Flower Homeo Clinic</h2>
-        <p>Compassionate care, calm environment, and customised treatment.</p>
+        <h2>About Us</h2>
+        <p>Compassionate care in a calm, welcoming environment.</p>
       </div>
       <div class="about-grid">
         <div class="about-content">
-          <h3>Our Clinic</h3>
-          <p>
-            Flower Homeo Clinic offers long-lasting relief from health problems by using the natural, 
-            German science of homoeopathy. Our expertise in holistic treatment gives you more than just 
-            short-term remedies. We provide an alternative approach for your condition so it does not come back again!
-          </p>
-          <p>
-            We give special attention to treating the root cause of diseases, with personalized 
-            treatment plans based on detailed case-taking.
-          </p>
+          <h3>Our Approach</h3>
+          <p>We use the gentle German science of homoeopathy to provide lasting relief by treating the root cause of your health concerns, not just the symptoms.</p>
         </div>
         <div class="doctor-profile-card">
           <div class="doctor-image-wrapper">
-            <img src="images/doctor-photo.jpg" alt="Dr. Andrews A. X. - Homeopathic Physician" class="doctor-image">
+            <img src="images/doctor-photo.jpg" alt="Dr. Andrews A. X. - Homeopathic Physician" class="doctor-image" loading="lazy">
           </div>
           <div class="doctor-info">
             <h3>Dr. Andrews A. X.</h3>
-            <p class="doctor-title">Treatment for Acute and Chronic Diseases</p>
-            <p class="doctor-experience">
-              More than <strong>35 years</strong> of experience in Homoeopathy Practice, 
-              treatment given to about <strong>6K+ patients</strong> at Thrissur, Hyderabad and Ernakulam, 
-              most of them with positive and satisfied results.
-            </p>
-            <p class="doctor-membership">
-              <i class="fas fa-certificate"></i> Member of All Kerala Homoeopathic Association (Regd.) 
-              with Adm. Office at JN Stadium, Ernakulam.
-            </p>
+            <p class="doctor-title">Acute &amp; Chronic Disease Specialist</p>
+            <p class="doctor-experience"><strong>35+ years</strong> experience with <strong>6000+ patients</strong> across Thrissur, Hyderabad &amp; Ernakulam.</p>
+            <p class="doctor-membership"><i class="fas fa-certificate"></i> Member, All Kerala Homoeopathic Association</p>
           </div>
         </div>
       </div>
@@ -108,49 +129,49 @@
   <section id="treatments" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2>Specialized Treatments</h2>
-        <p>Holistic homeopathic support for common and chronic conditions.</p>
+        <h2>Our Treatments</h2>
+        <p>Holistic care for common and chronic conditions.</p>
       </div>
       <div class="treatments-grid">
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-head-side-virus"></i></div>
-          <h3>Hair Fall Treatment</h3>
-          <p>Natural remedies to combat hair loss and promote healthy hair growth.</p>
+          <h3>Hair Fall</h3>
+          <p>Natural remedies for healthy hair growth.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-spa"></i></div>
-          <h3>Skin Treatment</h3>
-          <p>Comprehensive care for various skin conditions and disorders.</p>
+          <h3>Skin Care</h3>
+          <p>Comprehensive skin disorder treatment.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-hand-dots"></i></div>
-          <h3>Psoriasis Treatment</h3>
-          <p>Long-lasting relief from psoriasis with holistic approach.</p>
+          <h3>Psoriasis</h3>
+          <p>Long-lasting holistic relief.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-allergies"></i></div>
-          <h3>Eczema Treatment</h3>
-          <p>Gentle remedies to soothe and heal eczema effectively.</p>
+          <h3>Eczema</h3>
+          <p>Gentle, effective healing.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-circle-half-stroke"></i></div>
-          <h3>Vitiligo Treatment</h3>
-          <p>Natural treatment to address vitiligo and restore skin pigmentation.</p>
+          <h3>Vitiligo</h3>
+          <p>Natural pigmentation restoration.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-venus"></i></div>
-          <h3>PCOS Treatment</h3>
-          <p>Holistic approach to manage PCOS symptoms naturally.</p>
+          <h3>PCOS</h3>
+          <p>Holistic symptom management.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-shield-virus"></i></div>
-          <h3>Thyroid Treatment</h3>
-          <p>Balance thyroid function with homeopathic remedies.</p>
+          <h3>Thyroid</h3>
+          <p>Balance thyroid function naturally.</p>
         </article>
         <article class="treatment-card">
           <div class="treatment-icon"><i class="fas fa-brain"></i></div>
-          <h3>Migraine Treatment</h3>
-          <p>Effective relief from chronic migraines and headaches.</p>
+          <h3>Migraine</h3>
+          <p>Effective chronic headache relief.</p>
         </article>
       </div>
     </div>
@@ -160,24 +181,24 @@
   <section id="why-us" class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Why Choose Flower Homeo Clinic?</h2>
+        <h2>Why Choose Us?</h2>
       </div>
       <div class="why-grid">
         <div class="why-point">
-          <h3><i class="fas fa-leaf"></i> Natural & Safe</h3>
-          <p>Homeopathic remedies are mild and suitable for all age groups, including kids and elders.</p>
+          <h3><i class="fas fa-leaf"></i> Natural &amp; Safe</h3>
+          <p>Gentle remedies suitable for all ages.</p>
         </div>
         <div class="why-point">
           <h3><i class="fas fa-stethoscope"></i> 35+ Years Experience</h3>
-          <p>Dr. Andrews A. X. brings over three decades of expertise in treating various conditions.</p>
+          <p>Decades of expertise in treating various conditions.</p>
         </div>
         <div class="why-point">
-          <h3><i class="fas fa-house-medical"></i> Calm, Comforting Space</h3>
-          <p>A friendly clinic environment where you can feel relaxed and heard.</p>
+          <h3><i class="fas fa-house-medical"></i> Welcoming Space</h3>
+          <p>Calm, friendly clinic environment.</p>
         </div>
         <div class="why-point">
-          <h3><i class="fas fa-phone-volume"></i> Follow-up Support</h3>
-          <p>Easy follow-ups and guidance via call or WhatsApp for ongoing care.</p>
+          <h3><i class="fas fa-phone-volume"></i> Easy Follow-ups</h3>
+          <p>Support via call or WhatsApp.</p>
         </div>
       </div>
     </div>
@@ -187,21 +208,15 @@
   <section id="reviews" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2>What Our Patients Say</h2>
-        <p>Reviews from our valued patients on Google</p>
+        <h2>Patient Reviews</h2>
+        <p>What our patients say on Google</p>
       </div>
       <div class="google-reviews-container">
         <div class="google-reviews-header">
-          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo" loading="lazy">
           <div class="overall-rating">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <span class="rating-text">5.0 Star Rating</span>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <span class="rating-text">5.0 Rating</span>
           </div>
         </div>
         <div class="reviews-grid">
@@ -210,52 +225,34 @@
               <div class="reviewer-avatar"><i class="fas fa-user-circle"></i></div>
               <div class="reviewer-info">
                 <p class="reviewer-name">Patient Review</p>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
               </div>
             </div>
-            <p class="review-text">"Excellent treatment and very caring doctor. My chronic skin condition improved significantly after treatment."</p>
+            <p class="review-text">"Excellent treatment. My chronic skin condition improved significantly."</p>
           </div>
           <div class="review-card">
             <div class="review-header">
               <div class="reviewer-avatar"><i class="fas fa-user-circle"></i></div>
               <div class="reviewer-info">
                 <p class="reviewer-name">Patient Review</p>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
               </div>
             </div>
-            <p class="review-text">"Dr. Andrews is very experienced and takes time to understand the root cause. Highly recommend for chronic issues."</p>
+            <p class="review-text">"Dr. Andrews takes time to understand the root cause. Highly recommend!"</p>
           </div>
           <div class="review-card">
             <div class="review-header">
               <div class="reviewer-avatar"><i class="fas fa-user-circle"></i></div>
               <div class="reviewer-info">
                 <p class="reviewer-name">Patient Review</p>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+                <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
               </div>
             </div>
-            <p class="review-text">"Very professional and effective treatment. The clinic is clean and the staff is friendly."</p>
+            <p class="review-text">"Professional, effective treatment. Clean clinic with friendly staff."</p>
           </div>
         </div>
-        <a href="https://www.google.com/search?q=kaloor+flower+homeo+clinic&rlz=1C5MACD_enIN1132IN1133&oq=&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyDQgCEAAYkQIYgAQYigUyDQgDEC4YkQIYgAQYigUyDQgEEAAYkQIYgAQYigUyEggFEC4YQxivARjHARiABBiKBTINCAYQLhivARjHARiABDIHCAcQABiABDIMCAgQLhhDGIAEGIoFMgcICRAAGIAE0gEIMzQwN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x3b080d0ffc0dccb9:0xdc2a7291c370f08,1,,,," target="_blank" class="btn google-review-btn">
-          <i class="fab fa-google"></i> View All Google Reviews
+        <a href="https://www.google.com/search?q=kaloor+flower+homeo+clinic" target="_blank" rel="noopener noreferrer" class="btn google-review-btn">
+          <i class="fab fa-google"></i> View All Reviews
         </a>
       </div>
     </div>
@@ -267,9 +264,8 @@
       <div>
         <div class="section-header left">
           <h2>Book an Appointment</h2>
-          <p>Reach out to us for clinic visits or consultation.</p>
+          <p>Reach out for clinic visits or consultation.</p>
         </div>
-
         <form class="contact-form" id="contactForm">
           <div class="form-group">
             <label for="name">Full Name *</label>
@@ -277,56 +273,39 @@
           </div>
           <div class="form-group">
             <label for="phone">Phone / WhatsApp *</label>
-            <input id="phone" type="tel" placeholder="Your 10-digit number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+            <input id="phone" type="tel" placeholder="10-digit number" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
           </div>
           <div class="form-group">
-            <label for="service">Concern / Service</label>
-            <input id="service" type="text" placeholder="Hair fall, skin treatment, thyroid, etc.">
+            <label for="service">Concern</label>
+            <input id="service" type="text" placeholder="Hair fall, skin, thyroid, etc.">
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Share your health concern briefly"></textarea>
+            <textarea id="message" rows="3" placeholder="Brief health concern"></textarea>
           </div>
-          <button type="submit" class="btn primary-btn full-width-btn">
-            <i class="fab fa-whatsapp"></i> Send via WhatsApp
-          </button>
-          <p class="form-note">
-            *Your enquiry will be sent directly to the clinic via WhatsApp.
-          </p>
+          <button type="submit" class="btn primary-btn full-width-btn"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+          <p class="form-note">*Enquiry sent directly to clinic via WhatsApp.</p>
         </form>
       </div>
-
       <div class="contact-info-card">
         <h3>Clinic Details</h3>
         <p><strong>Flower Homeo Clinic</strong></p>
-        <p>3A1, Mayura Regency, Azad Rd,</p>
-        <p>Kathrikadavu, Kaloor,</p>
-        <p>Ernakulam, Kerala 682017</p>
-
+        <p>3A1, Mayura Regency, Azad Rd, Kathrikadavu, Kaloor, Ernakulam, Kerala 682017</p>
         <div class="contact-info-block">
-          <p><strong><i class="fas fa-phone"></i> Phone:</strong> <a href="tel:+918590421640">+91-8590421640</a></p>
-          <p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/918590421640" target="_blank">Chat on WhatsApp</a></p>
+          <p><strong><i class="fas fa-phone"></i></strong> <a href="tel:+918590421640">+91-8590421640</a></p>
+          <p><strong><i class="fab fa-whatsapp"></i></strong> <a href="https://wa.me/918590421640" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
         </div>
-
         <div class="contact-info-block">
-          <p><strong><i class="fas fa-clock"></i> Timings:</strong></p>
-          <p>9:00 AM - 12:30 PM</p>
-          <p>4:00 PM - 8:00 PM</p>
-        </div>
-
-        <div class="contact-info-block">
-          <p><strong><i class="fas fa-map-marker-alt"></i> Visit Us:</strong></p>
-          <p>3A1, Mayura Regency, Azad Road, Kaloor, Cochin-682017</p>
-          <p>for the best treatment for Acute and Chronic diseases.</p>
+          <p><strong><i class="fas fa-clock"></i> Hours:</strong> 9AM–12:30PM &amp; 4PM–8PM</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/918590421640" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+  <a href="https://wa.me/918590421640" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-text">Chat with us</span>
+    <span class="whatsapp-text">Chat</span>
   </a>
 
   <!-- Footer -->
@@ -334,48 +313,50 @@
     <div class="container footer-inner">
       <p>&copy; 2025 Flower Homeo Clinic. All rights reserved.</p>
       <p class="footer-credits">
-        Designed and developed by <span class="credit-name">Roshni Stephen</span> <span class="heart-icon">&hearts;</span> | 
-        Powered by <a href="https://lokaai.in/" target="_blank" class="credit-link">LOKA AI</a>
+        Designed by <a href="https://rs.lokaai.in/" target="_blank" rel="noopener noreferrer" class="credit-name">Roshni Stephen</a> <span class="heart-icon">&hearts;</span> | 
+        Powered by <a href="https://lokaai.in/" target="_blank" rel="noopener noreferrer" class="credit-link">LOKA AI</a>
       </p>
       <a href="#top" class="back-to-top">Back to top <i class="fas fa-arrow-up"></i></a>
     </div>
   </footer>
 
   <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const nav = document.getElementById('navMenu');
+      const btn = document.querySelector('.mobile-menu-btn i');
+      nav.classList.toggle('nav-open');
+      btn.classList.toggle('fa-bars');
+      btn.classList.toggle('fa-times');
+    }
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById('navMenu');
+        const btn = document.querySelector('.mobile-menu-btn i');
+        nav.classList.remove('nav-open');
+        btn.classList.add('fa-bars');
+        btn.classList.remove('fa-times');
+      });
+    });
+
+    // Contact form submission
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      
       const name = document.getElementById('name').value.trim();
       const phone = document.getElementById('phone').value.trim();
       const service = document.getElementById('service').value.trim();
       const message = document.getElementById('message').value.trim();
       
-      // Validation
-      if (name.length < 2) {
-        alert('Please enter a valid name (at least 2 characters).');
-        return;
-      }
+      if (name.length < 2) { alert('Please enter a valid name.'); return; }
+      if (!/^[0-9]{10}$/.test(phone)) { alert('Please enter a valid 10-digit phone number.'); return; }
       
-      if (!/^[0-9]{10}$/.test(phone)) {
-        alert('Please enter a valid 10-digit phone number.');
-        return;
-      }
+      let msg = `*New Enquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}`;
+      if (service) msg += `%0A*Concern:* ${encodeURIComponent(service)}`;
+      if (message) msg += `%0A*Message:* ${encodeURIComponent(message)}`;
       
-      // Build WhatsApp message
-      let whatsappMsg = `*New Enquiry from Website*%0A%0A`;
-      whatsappMsg += `*Name:* ${encodeURIComponent(name)}%0A`;
-      whatsappMsg += `*Phone:* ${encodeURIComponent(phone)}%0A`;
-      if (service) {
-        whatsappMsg += `*Concern:* ${encodeURIComponent(service)}%0A`;
-      }
-      if (message) {
-        whatsappMsg += `*Message:* ${encodeURIComponent(message)}`;
-      }
-      
-      // Open WhatsApp with pre-filled message
-      window.open(`https://wa.me/918590421640?text=${whatsappMsg}`, '_blank');
-      
-      // Reset form
+      window.open(`https://wa.me/918590421640?text=${msg}`, '_blank');
       this.reset();
     });
   </script>
