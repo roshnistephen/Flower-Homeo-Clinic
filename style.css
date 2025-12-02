@@ -582,7 +582,6 @@ body::before {
 }
 
 .review-card {
-  background: linear-gradient(145deg, #ffffff, var(--lavender));
   background: linear-gradient(145deg, #ffffff, var(--primary-light));
   border-radius: var(--radius-lg);
   padding: 1.2rem;
@@ -729,7 +728,7 @@ input:focus, textarea:focus {
 .whatsapp-float:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
-  animation: none;
+  animation: pulse 0.5s ease-in-out;
 }
 
 .whatsapp-float i { font-size: 1.4rem; }
