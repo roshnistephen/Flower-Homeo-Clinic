@@ -9,7 +9,7 @@
   <meta name="description" content="Flower Homeo Clinic offers natural homeopathic treatments for chronic diseases. Dr. Andrews A. X. with 35+ years experience treating 6000+ patients. Book your appointment today.">
   <meta name="keywords" content="homeopathy, homeopathic clinic, natural treatment, Dr. Andrews, Ernakulam, Kerala, skin treatment, hair fall, PCOS, thyroid, migraine, psoriasis, eczema, vitiligo">
   <meta name="author" content="Flower Homeo Clinic">
-  <meta name="theme-color" content="#0e7a6a">
+  <meta name="theme-color" content="#84cc16">
   
   <!-- Robots & Canonical -->
   <meta name="robots" content="index, follow">
@@ -28,8 +28,8 @@
   
   <!-- Critical CSS inline for above-fold content -->
   <style>
-    *,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:#f8fafb}
-    .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);border-bottom:2px solid rgba(14,122,106,.12);box-shadow:0 4px 30px rgba(0,0,0,.06);padding:.9rem 0}
+    *,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:#fefffe}
+    .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);border-bottom:2px solid rgba(132,204,22,.2);box-shadow:0 4px 30px rgba(0,0,0,.04);padding:.9rem 0}
     .container{width:min(1140px,92%);margin:0 auto}.nav-container{display:flex;align-items:center;justify-content:space-between}
   </style>
   
@@ -71,7 +71,7 @@
         <a href="#treatments">Treatments</a>
         <a href="#reviews">Reviews</a>
         <a href="#why-us">Why Us</a>
-        <a href="#contact" class="nav-cta">Book Now</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -134,50 +134,75 @@
   <section id="treatments" class="section section-alt">
     <div class="container">
       <div class="section-header">
+        <span class="section-badge"><i class="fas fa-heartbeat"></i> Specialized Care</span>
         <h2>Our Treatments</h2>
-        <p>Holistic care for common and chronic conditions.</p>
+        <p>Comprehensive homeopathic care for all age groups and conditions</p>
       </div>
-      <div class="treatments-grid">
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-head-side-virus"></i></div>
-          <h3>Hair Fall</h3>
-          <p>Natural remedies for healthy hair growth.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-spa"></i></div>
-          <h3>Skin Care</h3>
-          <p>Comprehensive skin disorder treatment.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-hand-dots"></i></div>
-          <h3>Psoriasis</h3>
-          <p>Long-lasting holistic relief.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-allergies"></i></div>
-          <h3>Eczema</h3>
-          <p>Gentle, effective healing.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-circle-half-stroke"></i></div>
-          <h3>Vitiligo</h3>
-          <p>Natural pigmentation restoration.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-venus"></i></div>
-          <h3>PCOS</h3>
-          <p>Holistic symptom management.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-shield-virus"></i></div>
-          <h3>Thyroid</h3>
-          <p>Balance thyroid function naturally.</p>
-        </article>
-        <article class="treatment-card">
-          <div class="treatment-icon"><i class="fas fa-brain"></i></div>
-          <h3>Migraine</h3>
-          <p>Effective chronic headache relief.</p>
-        </article>
+      <div class="treatments-table-wrapper">
+        <table class="treatments-table">
+          <thead>
+            <tr>
+              <th><i class="fas fa-user-md"></i> Category</th>
+              <th><i class="fas fa-notes-medical"></i> Conditions We Treat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="treatment-row" data-aos="fade-up">
+              <td class="category-cell">
+                <div class="category-icon children-icon">
+                  <i class="fas fa-child"></i>
+                </div>
+                <span class="category-name">Children</span>
+              </td>
+              <td class="conditions-cell">Allergic cold and sneezing along with fever and dyspnoea; Ailments due to various worms; Measles, mumps, wounds, backward in studies due to impaired memory or autism, eczema, stomach pain, vomiting and all fevers.</td>
+            </tr>
+            <tr class="treatment-row" data-aos="fade-up" data-aos-delay="100">
+              <td class="category-cell">
+                <div class="category-icon women-icon">
+                  <i class="fas fa-female"></i>
+                </div>
+                <span class="category-name">Women</span>
+              </td>
+              <td class="conditions-cell">All ailments related to uterus including excess bleeding, fibroids, ovarian cysts, sterility, irregular periods, obesity, hair loss, UTI, acidity, gastralgia.</td>
+            </tr>
+            <tr class="treatment-row" data-aos="fade-up" data-aos-delay="200">
+              <td class="category-cell">
+                <div class="category-icon men-icon">
+                  <i class="fas fa-male"></i>
+                </div>
+                <span class="category-name">Men</span>
+              </td>
+              <td class="conditions-cell">Impotency, weakness, side effects of smoking and alcohol, baldness, prostate problems.</td>
+            </tr>
+            <tr class="treatment-row" data-aos="fade-up" data-aos-delay="300">
+              <td class="category-cell">
+                <div class="category-icon constitutional-icon">
+                  <i class="fas fa-dna"></i>
+                </div>
+                <span class="category-name">Constitutional Diseases</span>
+              </td>
+              <td class="conditions-cell">Diabetes, blood pressure, dementia, heart problems (heart blocks at initial stage could be cured by German Medicine), swelling, stomach ulcers, rheumatic diseases, cholesterol, hyper/hypo thyroidism.</td>
+            </tr>
+            <tr class="treatment-row" data-aos="fade-up" data-aos-delay="400">
+              <td class="category-cell">
+                <div class="category-icon kidney-icon">
+                  <i class="fas fa-kidneys"></i>
+                </div>
+                <span class="category-name">Kidney &amp; Urinary</span>
+              </td>
+              <td class="conditions-cell">Stones in kidney, bladder and ureter; Nephritis, pyelitis, albuminuria, hydronephrosis, urinary infection, creatinine, uric acid etc.</td>
+            </tr>
+            <tr class="treatment-row" data-aos="fade-up" data-aos-delay="500">
+              <td class="category-cell">
+                <div class="category-icon common-icon">
+                  <i class="fas fa-stethoscope"></i>
+                </div>
+                <span class="category-name">Common Diseases</span>
+              </td>
+              <td class="conditions-cell">Acidity, knee pain, arthritis, varicose vein, chronic headache, skin diseases, back pain, minor cuts, burns and injuries, all epidemic fevers like dengue, swine flu, chicken pox, jaundice.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
